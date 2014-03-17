@@ -32,6 +32,11 @@ We'll be creating a Bookstore database. Please download the following SQL file t
 
 <https://gist.github.com/kvirani/7742279/raw/8df9af5cf92297283b67b7467e3c1be2ca5a65b6/bookstore.sql>
 
+**Pro Tip:** Use the `wget` unix command utility to download (get) a file from the web onto your local machine:
+
+    cd /vagrant
+    wget https://gist.github.com/kvirani/7742279/raw/8df9af5cf92297283b67b7467e3c1be2ca5a65b6/bookstore.sql
+
 We can run the SQL instructions in this script file against our database using the `psql` command line tool. `cd` into the directory where the sql file is saved. Paste that `psql` command (that heroku gave you) but _append_ the following to the command before running it:  
 
     < bookstore.sql
