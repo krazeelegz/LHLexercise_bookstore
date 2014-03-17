@@ -98,6 +98,8 @@ Try out some of the `SELECT`s you ran previously. It should look a bit better th
 
 ## Practice with `SELECT` queries
 
+Follow along by typing in (don't copy/paste!) and executing the queries into your psql or pgAdmin client.
+
 ### 1. Using Aliases for table names
 
 We alias books as b because, well developers are lazy:
@@ -154,6 +156,8 @@ You can add parentheses around the conditions in the query above to help with re
     SELECT b.id, b.title, a.id, a.last_name FROM books AS b INNER JOIN authors AS a ON (b.author_id = a.id) WHERE (a.last_name = 'Geisel');
 
 Okay so what about OUTER joins? Read about them here: <http://www.commandprompt.com/ppbook/x5802.htm#AEN6531>
+
+[This blog post](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/) is a good visual explanation of SQL joins.
 
 Next, try out this example: <http://www.commandprompt.com/ppbook/x5802.htm#INNERJOINSVERSUSOUTERJOINS>
 
