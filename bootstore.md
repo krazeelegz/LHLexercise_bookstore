@@ -85,13 +85,16 @@ Many developers are happy with command line. Some others prefer a GUI. pgAdmin i
 
 Mac OS X Download Link:  <www.pgadmin.org/download/macosx.php>
 
-Launch a new connection window, and input your host, db and username in the appropriate fields ([Screenshot](http://d.pr/i/aGYm/4shu31ZL))
+Launch a new connection window, and input your host, db and username in the appropriate fields
+![Screenshot](http://d.pr/i/aGYm/4shu31ZL+)
 
-Don't copy my credentials above, use yours from the heroku page ([Screenshot](http://d.pr/i/SgbM/33MdEw67))
+Don't copy my credentials above, use yours from the heroku page
+![Screenshot](http://d.pr/i/SgbM/33MdEw67+)
 
 Once connected, you'll see a crap load of databases listed under your server. Thankfully it's sorted alphabetically. You'll have to scroll down until you visually locate your database (sorry!). I know what you're thinking at this point... "I'll just start typing in the name of the database instead"... Don't bother. They've made sure to waste your time here.
 
-Once you've located your database in the list (congratulations!), expand it and drill down until you get to the list of tables ([Screenshot](http://d.pr/i/9Bcr/3bkTRvNW)).
+Once you've located your database in the list (congratulations!), expand it and drill down until you get to the list of tables
+![Screenshot](http://d.pr/i/9Bcr/3bkTRvNW+)
 
 ### Notes:
 * pgAdmin is notorious for "beachballing". Be patient with it if it does. If you're not feeling patient, just kill and relaunch it. I do this all the time. I don't have time to stare at a beach ball. I've got things to see and people to do.
