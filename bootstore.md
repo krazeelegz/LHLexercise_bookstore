@@ -65,7 +65,7 @@ Let's run some basic SQL to check out the data:
 
     SELECT * from books;
 
-[Resulting output](http://d.pr/i/mbX4/5u1ejog5)
+![Resulting output](http://d.pr/i/mbX4/5u1ejog5+)
 
 Boom... you're browsing your bookstore data! Try it out with some of the other tables (`customers`, `subjects`, `authors`, etc). Recall that `\d` will list out tables in your db.
 
@@ -77,7 +77,7 @@ Boom... you're browsing your bookstore data! Try it out with some of the other t
 
 ### Errors
 
-Enter in some invalid queries to get acquainted and comfortable with error feedback from postgres. [Examples](http://d.pr/i/hKum/5ChRi2YL)
+Enter in some invalid queries to get acquainted and comfortable with error feedback from postgres. ![Examples](http://d.pr/i/hKum/5ChRi2YL+)
 
 ## pgAdmin III
 
