@@ -57,7 +57,7 @@ As soon as you run that, you should start seeing output on multiple lines, start
 Cool... so let's check out our db. Connect to it using `heroku pg:psql` command just like we had initially (without the `< bookstore.sql` appended to the command since we've already run our SQL script against the database and we only need to do that once to load up the db).
 
 Once you're in the psql shell, run the \d command and you will see a list of the tables:
-![Screenshot](http://d.pr/i/9HEW/5Uf5THTd)
+![Screenshot](http://d.pr/i/9HEW/5Uf5THTd+)
 
 **Note:** You can press `q` when psql is listing out stuff and there is more to show. You can also use arrow keys to move up or down and the space key to page down.
 
