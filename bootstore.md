@@ -42,7 +42,7 @@ We'll be creating a Bookstore database. Please download the following SQL file t
 
     wget https://gist.githubusercontent.com/kvirani/7742279/raw/bf24ac9bb25f2bfeb5200856a3c22f7733ef8e08/bookstore.sql
 
-We can run the SQL instructions in this script file against our database using the `psql` command line tool. `cd` into the directory where the sql file is saved. Paste that `heroku pg:psql` command (that heroku gave you) but _append_ the following to the command before running it:  
+We can run the SQL instructions in this script file against our database using the `heroku pg:psql` command line tool. `cd` into the directory where the sql file is saved. Paste that `heroku pg:psql` command (that heroku gave you) but _append_ the following to the command before running it:  
 
     < bookstore.sql
 
@@ -56,7 +56,7 @@ As soon as you run that, you should start seeing output on multiple lines, start
 
 Cool... so let's check out our db. Connect to it using `heroku pg:psql` command just like we had initially (without the `< bookstore.sql` appended to the command since we've already run our SQL script against the database and we only need to do that once to load up the db).
 
-Once you're in the psql shell, run the \d command and you will see a list of the tables:
+Once you're in the psql shell, run the `\d` command and you will see a list of the tables:
 ![Screenshot](http://d.pr/i/9HEW/5Uf5THTd+)
 
 **Note:** You can press `q` when psql is listing out stuff and there is more to show. You can also use arrow keys to move up or down and the space key to page down.
