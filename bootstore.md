@@ -1,8 +1,3 @@
-Week 3 Day 1 - SQL
-================
-
-# Bookstore Database Assignment
-
 ## Database Setup
 
 We will be using Heroku's postgres service to create (provision) a database in the cloud.
