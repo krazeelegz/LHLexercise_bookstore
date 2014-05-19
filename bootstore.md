@@ -36,11 +36,11 @@ The database is still empty... Let's load it up with data.
 
 We'll be creating a Bookstore database. Please download the following SQL file to your folder where are your project files are (Run `cd /vagrant` in your in your vagrant machine):
 
-<https://gist.githubusercontent.com/kvirani/7742279/raw/bc1644a870a0b79ed2233b24c4bc7ad5c733758e/bookstore.sql>
+<https://gist.githubusercontent.com/kvirani/7742279/raw/bf24ac9bb25f2bfeb5200856a3c22f7733ef8e08/bookstore.sql>
 
 **Pro Tip:** Use the `wget` unix command utility to download (get) a file from the web onto your local machine:
 
-    wget https://gist.githubusercontent.com/kvirani/7742279/raw/bc1644a870a0b79ed2233b24c4bc7ad5c733758e/bookstore.sql
+    wget https://gist.githubusercontent.com/kvirani/7742279/raw/bf24ac9bb25f2bfeb5200856a3c22f7733ef8e08/bookstore.sql
 
 We can run the SQL instructions in this script file against our database using the `psql` command line tool. `cd` into the directory where the sql file is saved. Paste that `psql` command (that heroku gave you) but _append_ the following to the command before running it:  
 
