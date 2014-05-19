@@ -13,11 +13,19 @@ Create a free database (Dev Plan). This will create a brand spanking�
 
 [Screenshot: Heroku dropdown for PSQL command](http://d.pr/i/YbOR/38sc3mBn)
 
+### Installing Heroku Toolbelt
+
+Download and install the Heroku Toolbelt for Debian/Ubuntu in **your vagrant virtual machine** using the `wget` command they give you here: <https://toolbelt.heroku.com/debian>
+
 ### Connecting via command line
 
-Copy the full `psql` command string from the database page on Heroku. From anywhere within your vagrant instance, paste this command in the terminal and hit enter.
+Copy the `heroku:psql` from the heroku database details page:
+![Heroku PSQL Screenshot](http://d.pr/i/s19m/5IOuAU8o+)
 
-You should now be within the `psql` REPL.
+From anywhere within your vagrant instance, paste this command in the terminal and hit enter.
+
+This Heroku command is actually just a convenience for the real deal, the `psql` command. Just like irb and pry, `psql` is a REPL. However, instead of using it for interactive ruby, it's an interactive shell for executing SQL against a live database connection.
+
 Some useful psql commands for you to try out at this point (in order) are:
 * `\d` - List all of the relations (tables, sequences, etc) in your database. Use arrow keys / spacebar to nav
 * `\q` - Quit psql
