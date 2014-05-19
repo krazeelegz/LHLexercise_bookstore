@@ -27,7 +27,7 @@ From anywhere within your vagrant box, paste this command in the prompt.
 Example run: 
 ![Example PSQL Screenshot](http://d.pr/i/RkVz/37fOMk6r+)
 
-This Heroku command is actually just a convenience for the real deal, the `psql` command. Just like irb and pry, `psql` is a REPL. However, instead of using it for interactive ruby, it's an interactive shell for executing SQL against a live database connection.
+This Heroku command is actually just a convenience for the real deal, the `psql` command. This command comes with the Postgres installation. Your vagrant box already has postgres installed on it. Just like irb and pry, `psql` is a REPL (Read-Eval-Print-Loop), aka interactive shell. However, instead interactive ruby, it's an interactive shell for executing SQL against a live database connection.
 
 Some useful psql commands for you to try out at this point (in order) are:
 * `\d` - List all of the relations (tables, sequences, etc) in your database. Use arrow keys / spacebar to nav
@@ -39,14 +39,13 @@ The database is still empty... Let's load it up with data.
 
 ### Loading with data
 
-We'll be creating a Bookstore database. Please download the following SQL file to your folder where are your project files are (where /vagrant in your vagrant machine leads to):
+We'll be creating a Bookstore database. Please download the following SQL file to your folder where are your project files are (Run `cd /vagrant` in your in your vagrant machine):
 
-<https://gist.github.com/kvirani/7742279/raw/8df9af5cf92297283b67b7467e3c1be2ca5a65b6/bookstore.sql>
+<https://gist.githubusercontent.com/kvirani/7742279/raw/bc1644a870a0b79ed2233b24c4bc7ad5c733758e/bookstore.sql>
 
 **Pro Tip:** Use the `wget` unix command utility to download (get) a file from the web onto your local machine:
 
-    cd /vagrant
-    wget https://gist.github.com/kvirani/7742279/raw/8df9af5cf92297283b67b7467e3c1be2ca5a65b6/bookstore.sql
+    wget https://gist.githubusercontent.com/kvirani/7742279/raw/bc1644a870a0b79ed2233b24c4bc7ad5c733758e/bookstore.sql
 
 We can run the SQL instructions in this script file against our database using the `psql` command line tool. `cd` into the directory where the sql file is saved. Paste that `psql` command (that heroku gave you) but _append_ the following to the command before running it:  
 
