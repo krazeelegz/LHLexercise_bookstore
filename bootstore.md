@@ -5,24 +5,24 @@ Week 3 Day 1 - SQL
 
 ## Database Setup
 
-We will be using Heroku's postgres service to create (provision) databases in the cloud.
+We will be using Heroku's postgres service to create (provision) a database in the cloud.
 
-Go ahead and log in to the dashboard with your heroku credentials now: <https://postgres.heroku.com>
+Go ahead and log in to the dashboard with your heroku credentials now: <https://postgres.heroku.com>. Sign up for a Heroku account first if needed.
 
-Create a free database (Dev Plan). This will create a brand spanking new PostgreSQL database instance for you. It will be empty of course, meaning it will have no tables or data. Let's connect to the database. Connect to it using a command line tool that comes with pg called `psql`.
-
-[Screenshot: Heroku dropdown for PSQL command](http://d.pr/i/YbOR/38sc3mBn)
+Create a free database (Dev Plan). This will create a brand spanking new PostgreSQL database instance for you. It will be empty of course, meaning it will have no tables or data. 
 
 ### Installing Heroku Toolbelt
 
-Download and install the Heroku Toolbelt for Debian/Ubuntu in **your vagrant virtual machine** using the `wget` command they give you here: <https://toolbelt.heroku.com/debian>
+Before we can connect to the database, we need to download and install Heroku's command line client. 
+
+Download and install the Heroku Toolbelt for Debian/Ubuntu in **your vagrant virtual machine** using the `wget` command they give you here: <https://toolbelt.heroku.com/debian>. You can run it from anywhere within your vagrant box.
 
 ### Connecting via command line
 
 Copy the `heroku:psql` from the heroku database details page:
 ![Heroku PSQL Screenshot](http://d.pr/i/s19m/5IOuAU8o+)
 
-From anywhere within your vagrant instance, paste this command in the terminal and hit enter.
+From anywhere within your vagrant box, paste this command in the prompt.
 
 This Heroku command is actually just a convenience for the real deal, the `psql` command. Just like irb and pry, `psql` is a REPL. However, instead of using it for interactive ruby, it's an interactive shell for executing SQL against a live database connection.
 
@@ -32,7 +32,7 @@ Some useful psql commands for you to try out at this point (in order) are:
 
 Go ahead and use the `\q` command to quit psql.
 
-Let's load it up with data.
+The database is still empty... Let's load it up with data.
 
 ### Loading with data
 
