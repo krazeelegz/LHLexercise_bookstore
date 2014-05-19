@@ -24,6 +24,9 @@ Copy the `heroku:psql` from the heroku database details page:
 
 From anywhere within your vagrant box, paste this command in the prompt.
 
+Example run: 
+![Example PSQL Screenshot](http://d.pr/i/RkVz/37fOMk6r+)
+
 This Heroku command is actually just a convenience for the real deal, the `psql` command. Just like irb and pry, `psql` is a REPL. However, instead of using it for interactive ruby, it's an interactive shell for executing SQL against a live database connection.
 
 Some useful psql commands for you to try out at this point (in order) are:
